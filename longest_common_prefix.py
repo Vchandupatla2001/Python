@@ -3,7 +3,7 @@ def longest_common_prefix(strs):
     res=""
     for i in range(len(shortest)):
         curr=strs[0][i]
-        if (all(words[i]==curr for words in strs)):
+        if (all(words[i]==curr for words in strs)): #checks  ith char for all the words in strs 
             res=res+(str(curr))
         else:
             break
